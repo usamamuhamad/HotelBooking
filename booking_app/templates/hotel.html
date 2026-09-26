@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Hotels in {{ city }}</h1>
+<div class="hotel-list">
+    {% for hotel in hotels %}
+    <div class="hotel">
+        <h2>{{ hotel.name }}</h2>
+        <p>{{ hotel.address }}</p>
+        <a href="#" class="btn btn-outline-success">Book Now</a>
+    </div>
+    {% empty %}
+    <p>No hotels found in {{ city }}.</p>
+    {% endfor %}
+</div>
+{% endblock %}

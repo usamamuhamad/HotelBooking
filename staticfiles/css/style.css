@@ -1,0 +1,343 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures the navbar stays above other elements */
+  background-color: #e3f2fd; /* Keeps the background color consistent */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for better visibility */
+}
+
+
+nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: rgb(4, 109, 25);
+}
+.nav-item a{
+  color: rgb(4, 109, 25);
+}
+.nav-item a:hover{
+  text-decoration: underline;
+  
+}
+.navbar-brand {
+  color: rgb(4, 109, 25);
+}
+.navbar-brand:hover{
+  text-decoration: underline;
+}
+.navbar-nav a{
+  padding-left: 25px;
+  
+}
+
+.navbar-nav a:hover{
+  text-decoration: underline;
+}
+/* Center the login form */
+/* Center the login form */
+.login-container {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa; /* Light background color */
+}
+
+.login-form-container {
+  width: 100%;
+  max-width: 400px; /* Limit the width of the form */
+  padding: 20px;
+  background-color: #fff; /* White background for the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visuals */
+}
+/* Center the signup form */
+.signup-container {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa; /* Light background color */
+}
+
+.signup-form-container {
+  width: 100%;
+  max-width: 400px; /* Limit the width of the form */
+  padding: 20px;
+  background-color: #fff; /* White background for the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visuals */
+}
+.form-control-dark {
+    border-color: var(--bs-gray);
+  }
+  .form-control-dark:focus {
+    border-color: #fff;
+    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+  }
+  
+  .text-small {
+    font-size: 85%;
+  }
+  
+  /*.dropdown-toggle:not(:focus) {
+    outline: 0;
+  }
+ */
+ .custom-dropdown {
+  max-height: 210px;  /* Limits dropdown height */
+  overflow-y: auto;  /* Adds scrolling if needed */
+  background-color: white !important; /* Background color */
+  
+}
+
+.custom-dropdown .dropdown-item {
+  color: rgb(4, 109, 25) !important; /* Set text color to white */
+}
+
+.custom-dropdown .dropdown-item:hover {
+  background-color: rgb(211, 235, 245) !important; /* Light hover effect */
+  color: rgb(4, 109, 25) !important; /* Ensures text remains visible */
+}
+#navbarDropdown{
+  color: rgb(4, 109, 25);
+}
+
+
+  img.logo {
+    height: 60px;
+    width: 5%;
+}
+.d-flex {
+  display: flex;
+  justify-content: flex-end;
+}
+.banner {
+  background-image: url("/static/images/banner1.jpeg"); /* Correct static path */
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Adjust height as needed */
+  color: white; /* Ensures text is visible */
+  position: relative;
+}
+
+
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: rgb(211, 235, 245); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.banner-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(4, 109, 25);
+}
+
+.banner-text p {
+  font-size: 1.2rem;
+  color: rgb(4, 109, 25);
+}
+
+.banner-text .btn {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: rgb(211, 235, 245);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+.animated-heading {
+  animation: fadeIn 2s ease-in-out;
+  color: rgb(4, 109, 25);
+  margin-top: 10px;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+  margin-top: auto;
+  background-color: rgb(211, 235, 245); /* Optional: Footer background color */
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+.footer-links li {
+  display: inline;
+  margin: 0 15px;
+}
+.footer-links a {
+  color: rgb(4, 109, 25);
+  text-decoration: none;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+.footer-links p {
+  color: rgb(4, 109, 25);
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+.about-container h2 {
+  margin-bottom: 20px;
+}
+.about-container p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+/* filepath: c:\Users\Admin\Desktop\FinalProject\hotel_booking\booking_app\static\css\style.css */
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers hotels in rows */
+  gap: 20px;
+}
+
+.hotel {
+  flex: 0 1 calc(33.33% - 20px); /* Ensures 3 hotels per row */
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: #fff;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+
+.hotel img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: Add rounded corners to images */
+}
+
+.hotel h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.hotel p {
+  font-size: 0.9rem;
+  color: #555;
+  padding-left: 20px;
+}
+
+/* Ensure all gallery images have the same size */
+.gallery-image,
+#gallery-image {
+  width: 100%; 
+  max-width: 250px; 
+  height: auto; 
+  object-fit: cover; 
+  border-radius: 8px; 
+  margin: 5px;
+}
+
+/* Center the images in the modal */
+#gallery-image {
+  display: block;
+  margin: 0 auto; 
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .gallery-image,
+  #gallery-image {
+    max-width: 100%; 
+  }
+}
+
+.gallery-image:hover {
+  transform: scale(1.1);
+}
+
+
+/* Amenities Section Styling */
+.amenities-container {
+  
+  display: flex;
+  margin-right: 20px;
+  align-items: center;
+}
+
+.amenities-container h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.amenities-container ul {
+  padding: 0;
+  margin: 0;
+  
+}
+
+.amenities-container li {
+  font-size: 16px;
+  color: #333;
+}
+
+.amenities-container li i {
+  font-size: 18px;
+  color: rgb(4, 109, 25); /* Green checkmark or icon */
+}
+

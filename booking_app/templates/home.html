@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% for hotel in hotels %}
+    <div class="hotel" 
+         data-city="{{ hotel.city }}" 
+         data-hotel="{{ hotel.id }}" 
+         data-price="{{ hotel.price_per_night }}" 
+         data-address="{{ hotel.address }}" 
+         data-images="{{ hotel.images|safe }}" 
+         data-amenities="{{ hotel.amenities|safe }}">
+        <h2>{{ hotel.name }}</h2>
+        <p>{{ hotel.address }}</p>
+        <p>Price per Night: Rs {{ hotel.price_per_night }}</p>
+        <a href="#" class="btn btn-outline-success view-details">View Details</a>
+    </div>
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Your Booking History</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Hotel</th>
+            <th>Check-in</th>
+            <th>Check-out</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for booking in bookings %}
+        <tr>
+            <td>{{ booking.hotel.name }}</td>
+            <td>{{ booking.check_in_date }}</td>
+            <td>{{ booking.check_out_date }}</td>
+            <td>
+                {% if booking.is_completed %}
+                    Completed
+                {% else %}
+                    Ongoing
+                {% endif %}
+            </td>
+            <td>
+                {% if booking.can_leave_feedback %}
+                    <a href="{% url 'submit_feedback' booking.id %}" class="btn btn-outline-success">Leave Feedback</a>
+                {% elif booking.feedback_submitted %}
+                    Feedback Submitted
+                {% else %}
+                    Feedback Not Available
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
